@@ -1,4 +1,8 @@
-theme: uswds-jekyll
+# _config.yml
+
+title: CRFMC 
+
+# theme: uswds-jekyll
 
 # To use theme from GitHub
 # remote_theme:
