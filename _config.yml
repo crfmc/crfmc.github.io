@@ -1,4 +1,8 @@
-theme: jekyll-theme-minimal
+# theme: jekyll
 
 # To use theme from GitHub
 # remote_theme:
+
+sass:
+  load_paths:
+    - assets/css/styles.scss
