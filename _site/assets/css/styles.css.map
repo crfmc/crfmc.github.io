@@ -3,12 +3,16 @@
 	"file": "styles.css",
 	"sources": [
 		"styles.scss",
-		"_sass/main.scss"
+		"_sass/main.scss",
+		"_sass/modules/_navigation.scss",
+		"_sass/modules/_tokens.scss"
 	],
 	"sourcesContent": [
-		"// @import \"bootstrap\";\n@import \"main\";",
-		".current {\n    font-weight: 700;\n}"
+		"@import \"main\";",
+		"@import \"modules/_navigation.scss\";\n\n* > * {\n    box-sizing: border-box;\n}\n.current {\n    font-weight: 700;\n}",
+		"@import \"_tokens.scss\";\n\n.navbar {\n    background: linear-gradient(to right, #155799 0%, #159957 100%) !important;\n\n    .navbar-brand {\n        color: white;\n        font-weight: 700;\n        font-size: 1.875rem;\n    }\n    .nav-item {\n        position: relative;\n        margin: auto 5px;\n        height: 40px;\n    }\n    .nav-link {\n        padding: 10px;\n        color: white;\n        font-weight: 400;\n        font-family: Arial, Helvetica, sans-serif;\n    }\n\n    @media screen and (min-width: 992px) {\n        height: 100px;\n        .nav-item {\n            display: flex;\n            justify-content: center;\n            padding: 0px 10px;\n\n            &-disc { // Add a disc before each nav item\n                height: 3px;\n                width: 3px;\n                background-color: rgba(255,255,255,0.33);\n                border-radius: 100%;\n                position: absolute;\n                left: -8px;\n                top: 50%;\n                transform: translateY(-50%);\n            }\n\n            &:first-of-type {\n                .nav-item-disc {\n                    display: none;\n                }\n            }\n\n            .nav-link {\n                margin: auto;\n                padding: 0px;\n            }\n        }\n    }\n\n    .link-underline-animate { // Add an underline animation to the nav links\n        position: relative;\n        &:before {\n            content: \"\";\n            position: absolute;\n            margin-left: 50%;\n            transform: translateX(-50%);\n            height: 1px;\n            background-color: white;\n            bottom: 0px;\n            width: 0%;\n            transition: width 100ms ease-out;\n        }\n\n        &:hover {\n            color: white;\n            text-decoration: none;\n            position: relative;\n\n            &:before {\n                width: 100%;\n            }\n        }\n    }\n}",
+		"$white: #FFFFFF;"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,WAAW,EAAE,GAAG,GACnB"
+	"mappings": "AEEA,AAAA,OAAO,CAAC,EACJ,UAAU,EAAE,mDAAmD,CAAC,UAAU,GA0E7E;;AA3ED,AAGI,OAHG,CAGH,aAAa,CAAC,EACV,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,GAAG,EAChB,SAAS,EAAE,QAAQ,GACtB;;AAPL,AAQI,OARG,CAQH,SAAS,CAAC,EACN,QAAQ,EAAE,QAAQ,EAClB,MAAM,EAAE,QAAQ,EAChB,MAAM,EAAE,IAAI,GACf;;AAZL,AAaI,OAbG,CAaH,SAAS,CAAC,EACN,OAAO,EAAE,IAAI,EACb,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,GAAG,EAChB,WAAW,EAAE,4BAA4B,GAC5C;;AAED,MAAM,8BApBV,GAAA,AAAA,OAAO,CAAC,EAqBA,MAAM,EAAE,KAAK,GAsDpB,CA3ED,AAsBQ,OAtBD,CAsBC,SAAS,CAAC,EACN,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,EACvB,OAAO,EAAE,QAAQ,GAuBpB,CAhDT,AA2BY,OA3BL,CAsBC,cAAS,CAKE,EACH,MAAM,EAAE,GAAG,EACX,KAAK,EAAE,GAAG,EACV,gBAAgB,EAAE,yBAAsB,EACxC,aAAa,EAAE,IAAI,EACnB,QAAQ,EAAE,QAAQ,EAClB,IAAI,EAAE,IAAI,EACV,GAAG,EAAE,GAAG,EACR,SAAS,EAAE,gBAAgB,GAC9B,CApCb,AAuCgB,OAvCT,CAsBC,SAAS,CAgBH,aAAa,CACX,cAAc,CAAC,EACX,OAAO,EAAE,IAAI,GAChB,CAzCjB,AA4CY,OA5CL,CAsBC,SAAS,CAsBL,SAAS,CAAC,EACN,MAAM,EAAE,IAAI,EACZ,OAAO,EAAE,GAAG,GACf,EA4BZ;;AA3ED,AAmDI,OAnDG,CAmDH,uBAAuB,CAAC,EACpB,QAAQ,EAAE,QAAQ,GAsBrB;;AA1EL,AAqDQ,OArDD,CAmDH,uBAAuB,CAEjB,MAAM,CAAC,EACL,OAAO,EAAE,EAAE,EACX,QAAQ,EAAE,QAAQ,EAClB,WAAW,EAAE,GAAG,EAChB,SAAS,EAAE,gBAAgB,EAC3B,MAAM,EAAE,GAAG,EACX,gBAAgB,EAAE,KAAK,EACvB,MAAM,EAAE,GAAG,EACX,KAAK,EAAE,EAAE,EACT,UAAU,EAAE,oBAAoB,GACnC;;AA/DT,AAiEQ,OAjED,CAmDH,uBAAuB,CAcjB,KAAK,CAAC,EACJ,KAAK,EAAE,KAAK,EACZ,eAAe,EAAE,IAAI,EACrB,QAAQ,EAAE,QAAQ,GAKrB;;AAzET,AAsEY,OAtEL,CAmDH,uBAAuB,CAcjB,KAAK,CAKD,MAAM,CAAC,EACL,KAAK,EAAE,IAAI,GACd;;ADxEb,AAAA,CAAC,GAAG,CAAC,CAAC,EACF,UAAU,EAAE,UAAU,GACzB;;AACD,AAAA,QAAQ,CAAC,EACL,WAAW,EAAE,GAAG,GACnB"
 }

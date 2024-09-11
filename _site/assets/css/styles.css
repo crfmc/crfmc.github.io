@@ -1,3 +1,23 @@
+.navbar { background: linear-gradient(to right, #155799 0%, #159957 100%) !important; }
+
+.navbar .navbar-brand { color: white; font-weight: 700; font-size: 1.875rem; }
+
+.navbar .nav-item { position: relative; margin: auto 5px; height: 40px; }
+
+.navbar .nav-link { padding: 10px; color: white; font-weight: 400; font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (min-width: 992px) { .navbar { height: 100px; } .navbar .nav-item { display: flex; justify-content: center; padding: 0px 10px; } .navbar .nav-item-disc { height: 3px; width: 3px; background-color: rgba(255, 255, 255, 0.33); border-radius: 100%; position: absolute; left: -8px; top: 50%; transform: translateY(-50%); } .navbar .nav-item:first-of-type .nav-item-disc { display: none; } .navbar .nav-item .nav-link { margin: auto; padding: 0px; } }
+
+.navbar .link-underline-animate { position: relative; }
+
+.navbar .link-underline-animate:before { content: ""; position: absolute; margin-left: 50%; transform: translateX(-50%); height: 1px; background-color: white; bottom: 0px; width: 0%; transition: width 100ms ease-out; }
+
+.navbar .link-underline-animate:hover { color: white; text-decoration: none; position: relative; }
+
+.navbar .link-underline-animate:hover:before { width: 100%; }
+
+* > * { box-sizing: border-box; }
+
 .current { font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */

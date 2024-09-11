@@ -1,3 +1,8 @@
+@import "modules/_navigation.scss";
+
+* > * {
+    box-sizing: border-box;
+}
 .current {
     font-weight: 700;
 }
