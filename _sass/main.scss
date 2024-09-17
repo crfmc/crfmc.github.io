@@ -1,7 +1,11 @@
+@import "pages/_index.scss";
+
 @import "modules/_navigation.scss";
+@import "modules/_bootstrap_overrides.scss";
 
 * > * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .current {
     font-weight: 700;
