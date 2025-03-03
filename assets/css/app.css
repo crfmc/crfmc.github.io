@@ -8528,7 +8528,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
               justify-content: start;
               align-items: flex-start;
               max-width: 80%;
-              padding: 10px 20px 0px; }
+              padding: 10px 20px 0px;
+              gap: 5px; }
               .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .title {
                 margin: 0px; }
                 .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .title a {
@@ -8549,13 +8550,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
                 margin-top: 10px; }
               .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .additional-links-container {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 gap: 12px; }
                 .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .additional-links-container .link {
+                  display: flex;
+                  justify-content: center;
                   color: #4A4A4A;
                   font-size: 1.5rem; }
                   .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .additional-links-container .link:hover {
                     color: #404040; }
+                  .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .additional-links-container .link.organization {
+                    font-size: 1.25rem; }
+                  .people-page-container .page-body-container .category-container .category-body .person-container .person-card .person-information .additional-links-container .link.other {
+                    font-size: 1.25rem; }
           .people-page-container .page-body-container .category-container .category-body .person-container .person-container {
             width: 100%; }
     @media (min-width: 992px) {
@@ -8819,10 +8826,16 @@ a.has-text-danger:hover, a.has-text-danger:focus {
         justify-content: flex-start;
         gap: 12px; }
         .page-person .information-cards-container .information-card .additional-links-container .link {
+          display: flex;
+          justify-content: center;
           color: #4A4A4A;
           font-size: 1.5rem; }
           .page-person .information-cards-container .information-card .additional-links-container .link:hover {
             color: #404040; }
+          .page-person .information-cards-container .information-card .additional-links-container .link.organization {
+            font-size: 1.25rem; }
+          .page-person .information-cards-container .information-card .additional-links-container .link.other {
+            font-size: 1.25rem; }
   @media screen and (min-width: 480px) {
     .page-person .image-and-description {
       display: inline-block; } }
