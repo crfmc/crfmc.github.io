@@ -8826,6 +8826,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
         justify-content: flex-start;
         gap: 12px; }
         .page-person .information-cards-container .information-card .additional-links-container .link {
+          position: relative;
           display: flex;
           justify-content: center;
           color: #4A4A4A;
@@ -8836,6 +8837,12 @@ a.has-text-danger:hover, a.has-text-danger:focus {
             font-size: 1.25rem; }
           .page-person .information-cards-container .information-card .additional-links-container .link.other {
             font-size: 1.25rem; }
+            .page-person .information-cards-container .information-card .additional-links-container .link.other span {
+              position: absolute;
+              bottom: 0px;
+              right: 0px;
+              font-size: 0.5rem;
+              font-weight: 600; }
   @media screen and (min-width: 480px) {
     .page-person .image-and-description {
       display: inline-block; } }
