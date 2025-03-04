@@ -8617,6 +8617,12 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .news-card:first-of-type {
     padding-top: 20px; }
 
+.page-news-item .content h1.title {
+  margin-bottom: 10px; }
+.page-news-item .content .date {
+  margin-bottom: 10px; }
+.page-news-item .content .tags-container {
+  margin-bottom: 20px; }
 .page-news-item .content img {
   max-width: 100%; }
 @media screen and (min-width: 1200px) {
