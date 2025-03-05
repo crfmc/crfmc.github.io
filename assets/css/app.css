@@ -8960,6 +8960,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .page-tagpage h1 svg {
   margin-right: 1rem; }
+.page-tagpage .tag-list {
+  margin-top: 40px; }
 
 .carousel-container {
   margin-bottom: 50px; }
